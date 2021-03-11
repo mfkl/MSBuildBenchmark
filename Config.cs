@@ -8,7 +8,8 @@ namespace MSBuildBenchmark
         const string Build = "Microsoft.Build";
         const string BuildFramework = "Microsoft.Build.Framework";
         const string BuildTasksCore = "Microsoft.Build.Tasks.Core";
-
+        const string Version1690 = "16.9.0";
+        const string Version1680 = "16.8.0";
         const string Version1670 = "16.7.0";
         const string Version1660 = "16.6.0";
         const string Version1650 = "16.5.0";
@@ -18,7 +19,7 @@ namespace MSBuildBenchmark
         {
             var baseJob = Job.MediumRun;
 
-            AddMSBuildJob(Version1640, Version1650, Version1660, Version1670);
+            AddMSBuildJob(Version1640, Version1650, Version1660, Version1670, Version1680, Version1690);
 
             void AddMSBuildJob(params string[] versions)
             {
